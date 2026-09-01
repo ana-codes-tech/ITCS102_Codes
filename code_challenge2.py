@@ -1,25 +1,45 @@
 #Create make a python script that operates the following output
-#money = 1540
-#1000 - 1
-#500 - 1
-#
+#PESO DOMINATOR
+#MONEY = 4572 (random)
+# 1000, 500, 200, 100, 50, 20, 10, 5, 1
 
-amount = 1520
-a = 1000
-b = 1000 - 500
-c = 1000 - 200
-d = 1000 - 100
-e = 1000 - 50
-f = 1000 - 20
-g = 1000 - 10
+money = 4872
 
 
-thousand = 1000//a
-hundred = 500
-tenths = 20
+thousand = money // 1000
+thousand_reduced = money % 1000
 
+five_hundred = thousand_reduced // 500
+fiveh_reduced = thousand_reduced % 500
 
-print("Number of thousands is", amount//a )
-print("Number of hundreds is", amount//b)
+two_hundred = fiveh_reduced // 200
+twoh_reduced = fiveh_reduced % 200
 
+one_hundred = twoh_reduced // 100
+oneh_reduced = twoh_reduced % 100
+
+fifty = oneh_reduced // 50
+fifty_reduced = oneh_reduced % 50
+
+twenty = fifty_reduced // 20
+twenty_reduced = fifty_reduced % 20
+
+ten = twenty_reduced // 10
+ten_reduced = twenty_reduced % 10
+
+five = ten_reduced // 5
+five_reduced = ten_reduced % 5
+
+one = five_reduced // 1
+one_reduced = five_reduced % 1
+
+print("1000 - ",thousand)
+print("500 - ",five_hundred)
+print("200 - ",two_hundred)
+print("100 - ",one_hundred)
+print("50 - ",fifty)
+print("20 - ",twenty)
+print("10 - ",ten)
+print("5 - ",five)
+print("1 - ",one)
 

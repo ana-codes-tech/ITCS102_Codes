@@ -1,7 +1,22 @@
-#First step to dynamic content is thorugh INPUTS (User Input)
+#int(), or eval(), float()
 
-Fullname = input("What is your full name? ")
-print("Good day!", Fullname, "Welcome to Vanella Bankya")
+x = float(input("Gimme a float?:"))
 
-Bank_number = int(input("Type your 6 digits Bank number:"))
-print("Bank acount number",Bank_number, "found successfully.") 
+sum = x + 6
+
+print("Total = ", sum)
+print(type(x))
+
+x = eval(input("give me any type of number?:"))
+
+sum = x + 6
+
+print("Total = ", sum)
+print(type(x))
+
+x = int(input("How old are you?:"))
+
+sum = x + 6
+
+print("Total = ", sum)
+print(type(x))

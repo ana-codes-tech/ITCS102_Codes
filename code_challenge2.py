@@ -5,7 +5,6 @@
 
 money = 4872
 
-
 thousand = money // 1000
 thousand_reduced = money % 1000
 

@@ -8,31 +8,30 @@ type = str(input("Type of Item:"))
 weight = float(input("Weight in kg:"))
 distance = float(input("Distance in km:"))
 
-isFragile = bool(input("It's fragile:"))
-is_express =  bool(input("It's express:"))
-is_international =  bool(input("It's international:"))
-
+isFragile = input("Fragile (Pick one: True/False): ") == "True"
+is_express = input("Express (Pick one: True/False): ") == "True"
+is_international =  input("International (Pick one: True/False): ") == "True"
 
 total= 0
-base_cost = weight * 2.50 + distance * 0.15
+base_cost = (weight * 2.50) + (distance * 0.15)
 total =+ base_cost 
 
 print("Hello!", name, "Your total shipping payment is")
 
-if weight <= 2.0 and distance <= 100 and not isFragile and not is_international:
+if weight <= 2.0 and distance <= 100 and not is_express and not is_international:
 	total = 0
 	print(total)	
 
 elif is_international and is_express:
-	total =+ base_cost * 1.40 + 50
-	print(total)
+	total = (base_cost * 1.40) + 50
+	print(total,"Congrats! Your shipping fee is free")
 
 elif is_express or is_international and weight > 20:
-	total =+ base_cost * 1.20 + 25
+	total = (base_cost * 1.20) + 25
 	print(total)
 
 elif weight > 30 or distance > 1000:
-	total =+ base_cost + 30
+	total = base_cost + 30
 	print(total)
 
 else:

@@ -1,7 +1,7 @@
 #write program that calculates total shipping charges using package details, location rules, and strict #conditional order
 
 #Problem: Global Freight Calculator 
-#is_express mean if rush or notm is_international if lalabas ng bansa
+#is_express mean if rush or not, is_international if lalabas ng bansa
 
 name = str(input("Sender Name:"))
 type = str(input("Type of Item:"))
@@ -20,11 +20,11 @@ print("Hello!", name, "Your total shipping payment is")
 
 if weight <= 2.0 and distance <= 100 and not is_express and not is_international:
 	total = 0
-	print(total)	
+	print(total, "Congrats, Your Shipping is FREE!")	
 
 elif is_international and is_express:
 	total = (base_cost * 1.40) + 50
-	print(total,"Congrats! Your shipping fee is free")
+	print(total)
 
 elif is_express or is_international and weight > 20:
 	total = (base_cost * 1.20) + 25
@@ -36,4 +36,4 @@ elif weight > 30 or distance > 1000:
 
 else:
 	total = base_cost
-	print(total)
+	print(total, "Standard rate")

@@ -1,7 +1,4 @@
-#age requirement is 21
-#credit score, bank will rate ur capability to pay loan
-
-#inputs
+print("Bank Loan & Interest Rate Approver")
 age = int(input("How old are you?: "))
 is_employed = bool(input("Are you employed?: "))
 credit_score = int(input("Credit Score: "))

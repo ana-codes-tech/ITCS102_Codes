@@ -1,6 +1,6 @@
 #write program that calculates total shipping charges using package details, location rules, and strict #conditional order
 
-#Problem: Global Freight Calculator 
+print("-------Global Freight Calculator---------------------------") 
 #is_express mean if rush or not, is_international if lalabas ng bansa
 
 name = str(input("Sender Name:"))

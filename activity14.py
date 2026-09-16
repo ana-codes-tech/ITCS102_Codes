@@ -27,24 +27,26 @@ if age >= 21 and is_employed == True:
 
     elif credit_score >= 600 and credit_score < 750:
         base_rate = 8.0
-        print("Approved at", base_rate)
 
         if has_collateral == True:
             base_rate = 7.0
-            print("Approved at", base_rate)
+            print("Approved at base interest rate:", base_rate)
 
-        elif annual_income <= 40000:
+        elif annual_income < 40000:
             base_rate = 9.5
-            print("Approved at", base_rate)
+            print("Increased risk rate: Approved at", base_rate)
+
         else:
             base_rate = 8.0
             print("Base rate is", base_rate)
-        
-    elif credit_score <= 600:
-        print("Rejected: Credit Score Too Low")  
+
+    elif credit_score < 600:
+        print("Rejected: Credit Score Too Low")
+
     else:
-        print("Invalid Details")     
+        print("Failed")     
 
 else: 
     print("Rejected: Fails baseline criteria")
 
+#test case no.4 na lang not working waaaaaaaaaaaaaaaa

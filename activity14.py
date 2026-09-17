@@ -8,13 +8,13 @@ has_collateral = bool(input("Do you have any collateral (True/False)"))
 base_rate = 0.0
 
 if age >= 21 and is_employed == True:
-    print("Accepted Baseline")
+    print("Accepted Baseline, you are old enough and you have job")
 
     if credit_score >= 750:
-        print("You have a high credit score")
+        print("Age pass, has job, You have a high credit score")
             
         if annual_income >= 100000:
-            print("Paldo")
+            print("High income")
             base_rate = 4.5
             print("Approved at", base_rate)
 

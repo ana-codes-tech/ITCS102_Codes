@@ -1,9 +1,9 @@
 print("Bank Loan & Interest Rate Approver")
-age = int(input("How old are you?: "))
-is_employed = bool(input("Are you employed?: "))
-credit_score = int(input("Credit Score: "))
-annual_income = float(input("What is your annual income?: "))
-has_collateral = bool(input("Do you have any collateral (True/False)"))
+age = int(input("How old are you?: -> "))
+is_employed = bool(input("Are you employed?: (True/False) -> "))
+credit_score = int(input("Credit Score: -> "))
+annual_income = float(input("What is your annual income?: -> "))
+has_collateral = bool(input("Do you have any collateral: (True/False) -> "))
 
 base_rate = 0.0
 

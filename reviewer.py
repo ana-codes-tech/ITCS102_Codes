@@ -2,7 +2,7 @@ age = int(input("AGE:->"))
 rev = float(input("REVENUE ->"))
 cc = int(input("CREDIT SCORE:->"))
 yrs = float(input("YEARS IN BUSSINESS:->"))
-has_defaults = bool(input("FILE FOR BANKRUPTCY:->"))
+has_defaults = bool(int(input("FILE FOR BANKRUPTCY? (1=YES, 0=NO):-> "))) 
 collateral = input("COLLATERAL NAME:->")
 c_val = float(input("COLLATERAL VALUE:->"))
 

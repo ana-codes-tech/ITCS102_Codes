@@ -23,3 +23,17 @@ while isRaining == True:
         break
     else:
         break
+
+#make the loop stop when input is false
+isRaining = True
+
+while isRaining == True:
+    x = input("Is it raining outside? (True/False)")
+
+    if x == "True":
+        print("Continuing Loop")
+        continue
+    elif x == "False":
+        break
+    else:
+        break
